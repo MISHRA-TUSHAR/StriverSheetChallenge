@@ -2,8 +2,8 @@
 
 std::vector<int> KMostFrequent(int n, int k, std::vector<int>& arr)
 {
-    std::vector<int> ans;
-    std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<std::pair<int, int>>> mini;
+    vector<int> ans;
+    priority_queue<pair<int, int>, vector<std::pair<int, int>>, greater<pair<int, int>>> mini;
 
     std::unordered_map<int, int> mp;
     for (int i = 0; i < arr.size(); i++) {
