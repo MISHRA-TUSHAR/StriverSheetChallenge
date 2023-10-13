@@ -1,6 +1,7 @@
 Node *addTwoNumbers(Node *l1, Node *l2)
 {
     // Write your code here.
+    // toxic mishra
     if(l1==NULL)	return l2;
     else if(l2==NULL)	return l1;
     Node*temp=new Node(0);
