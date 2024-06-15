@@ -1,37 +1,18 @@
 LinkedListNode<int>* reverse(LinkedListNode<int>* ptr) {
-
     LinkedListNode<int>* pre=NULL;
-
     LinkedListNode<int>* nex=NULL;
-
     while(ptr!=NULL) {
-
         nex = ptr->next;
-
         ptr->next = pre;
-
         pre=ptr;
-
         ptr=nex;
-
     }
-
     return pre;
-
 }
-
- 
-
 bool isPalindrome(LinkedListNode<int> *head) {
-
   if (head == NULL || head->next == NULL) {
-
     return true;
-
   }
-
- 
-
     LinkedListNode<int>* slow = head;
 
     LinkedListNode<int>* fast = head;
